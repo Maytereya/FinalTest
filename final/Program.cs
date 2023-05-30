@@ -1,4 +1,6 @@
-﻿Console.Clear();
+﻿// Добавить в новый массив строки длиной равной или менее 3х символов.
+
+Console.Clear();
 Console.Write("Введите строковые элементы массива: ");
 
 string? input = Console.ReadLine();
