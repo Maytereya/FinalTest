@@ -4,6 +4,10 @@ Console.Clear();
 Console.Write("Введите строковые элементы массива: ");
 
 string? input = Console.ReadLine();
+
+if (String.IsNullOrEmpty(input))
+    Console.WriteLine("String is null or empty");
+
 string[] array = input.Split(' ');
 
 Console.WriteLine($"Массив строк: [{string.Join(",", array)}]");
