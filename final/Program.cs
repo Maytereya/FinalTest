@@ -4,12 +4,16 @@ Console.Clear();
 Console.Write("Введите строковые элементы массива: ");
 
 string? input = Console.ReadLine();
+string[] array = new string[0];
 
 if (String.IsNullOrEmpty(input))
     Console.WriteLine("String is null or empty");
-
-string[] array = input.Split(' ');
-
+else
+{
+Console.WriteLine("String is not null or empty");
+   array = input.Split(' ');
+}
+    
 Console.WriteLine($"Массив строк: [{string.Join(",", array)}]");
 
 int newarrlen = 0, l = 0;
